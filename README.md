@@ -5,13 +5,15 @@ It uses a [Grove multichannel gas sensor](https://coolcomponents.co.uk/products/
 
 Both the Grove and BME280 use I2C to talk to the NodeMCU. The NodeMCU then posts the data in JSON format to a web service.
 
+The code also uses mDNS to create an entry "gassensor.local" that can be pinged on your local network to check that the device has connected successfully.
+
 # Code
 The code can be found in the `src/gassensor` directory.
 
 Change `settings.h` to include your own WiFi settings
 
 ```cpp
-#define WIFI_Network "Perl Home"
+#define WIFI_Network "Your network name"
 #define WIFI_Password "Your network password"
 ```
 
