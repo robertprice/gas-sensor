@@ -18,6 +18,8 @@
 #define I2C_Gas 0x04
 #define I2C_BME 0x76
 
+#define WIFI_Network "Your network name"
+#define WIFI_Password "Your network password"
 /*
  * Add your WiFi details in the settings.h file
  */
